@@ -15,7 +15,7 @@ public class UserController {
     @RequestMapping("demo")
     public String demo(Model model) {
         model.addAttribute("message", "Hello Thymeleaf");
-        double grade = 95.0;
+        double grade = 40;
         model.addAttribute("grade", grade);
         model.addAttribute("GPA", convertGPA(grade));
         // return to templates/demo.html page.
@@ -23,7 +23,7 @@ public class UserController {
     }
 
     private String convertGPA(double grade) {
-        if (grade >= 70) {
+        if (grade >= 90) {
             return "A";
         } else if (grade < 90 && grade >= 80) {
             return "B";

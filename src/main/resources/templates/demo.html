@@ -9,14 +9,14 @@
 <div th:if="${grade} >= 60">
     You really passed your exam.
     <div th:switch="${GPA}"> You are
-        <span th:case="A">Excellent~~</span>
+        <span th:case="A">Excellent..</span>
         <span th:case="B">Very Good</span>
-        <span th:case="C">Okay</span>
-        <span th:case="D">Need improvement</span>
+        <span th:case="C">Just Okay</span>
+        <span th:case="D">Not doing good</span>
     </div>
 </div>
 <div th:if="${grade} < 60">
-    You failed the exam.
+    You failed the exam. I feel sorry for you.
 </div>
 <span th:text="${message}"></span>
 </body>
